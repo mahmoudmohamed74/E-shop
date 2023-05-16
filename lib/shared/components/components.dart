@@ -25,6 +25,8 @@ Widget defaultButton({
           isUpperCase ? text.toUpperCase() : text,
           style: TextStyle(
             color: Colors.white,
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
@@ -50,11 +52,13 @@ Widget defaultFormField({
 }) =>
     TextFormField(
       controller: controller,
+      style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
       keyboardType: type,
       onFieldSubmitted: (value) => onFieldSubmitted,
       onChanged: (value) => onChanged,
       decoration: InputDecoration(
         labelText: label,
+        labelStyle: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         prefixIcon: Icon(
           prefix,
         ),
@@ -86,7 +90,7 @@ Widget defaultTextButton({
         text.toUpperCase(),
         style: TextStyle(
           fontWeight: FontWeight.bold,
-          fontSize: 20,
+          fontSize: 25,
         ),
       ),
     );
