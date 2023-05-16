@@ -52,13 +52,13 @@ Widget defaultFormField({
 }) =>
     TextFormField(
       controller: controller,
-      style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       keyboardType: type,
       onFieldSubmitted: (value) => onFieldSubmitted,
       onChanged: (value) => onChanged,
       decoration: InputDecoration(
         labelText: label,
-        labelStyle: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+        labelStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         prefixIcon: Icon(
           prefix,
         ),

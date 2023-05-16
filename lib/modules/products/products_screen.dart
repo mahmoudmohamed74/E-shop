@@ -23,7 +23,6 @@ class ProductsScreen extends StatelessWidget {
               // text: "not auth",
               state: ToastStates.ERROR,
             );
-            // print("XOXOXOXOXOXOXOXOXOOXXOOXOXOX");
           }
         }
       },

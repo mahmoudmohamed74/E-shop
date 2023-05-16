@@ -127,7 +127,7 @@ class ShopRegisterScreen extends StatelessWidget {
                         ),
                         defaultFormField(
                           controller: phoneController,
-                          type: TextInputType.phone,
+                          type: TextInputType.number,
                           validate: (value) {
                             if (value!.isEmpty) {
                               return "Phone  number  must  not  be  empty";

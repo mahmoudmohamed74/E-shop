@@ -32,7 +32,9 @@ class ShopCubit extends Cubit<ShopStates> {
   }
 
   HomeModel? homeModel;
+
   Map<int, bool> fave = {};
+
   void getHomeData() {
     emit(ShopLoadingHomeDataState());
     DioHelper.getData(
@@ -40,6 +42,7 @@ class ShopCubit extends Cubit<ShopStates> {
       token: token,
     ).then((value) {
       homeModel = HomeModel.fromJson(value.data);
+
       // printFullText(homeModel!.data!.banners[0].image.toString());
       // print(homeModel!.data);
       homeModel!.data!.products.forEach((element) {
